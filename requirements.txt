@@ -1,0 +1,32 @@
+# Core ML/DL
+scikit-learn
+scipy
+tensorflow==2.10
+numpy==1.23.5
+
+
+# Data Processing
+Pillow==9.5.0
+opencv-python
+
+# Visualization
+matplotlib
+
+# Configuration & Utilities
+python-box==6.0.2
+pyYAML
+types-PyYAML
+python-dotenv
+tqdm
+joblib
+ensure==1.0.2
+
+# AWS Integration
+boto3
+
+# Web Framework
+Flask
+Flask-Cors
+
+# Local Package
+-e .

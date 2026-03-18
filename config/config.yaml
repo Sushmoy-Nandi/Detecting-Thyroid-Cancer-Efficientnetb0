@@ -1,0 +1,35 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  bucket_name: thyroid-cancer-ultrasound-dataset
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
+  split_dir: artifacts/data_ingestion/split
+
+federated_learning:
+  root_dir: artifacts/federated_learning
+  client_data_dir: artifacts/federated_learning/clients
+  training_data: artifacts/data_ingestion/split/train
+
+feature_selection:
+  root_dir: artifacts/feature_selection
+  selected_features_path: artifacts/feature_selection/selected_features.pkl
+
+federated_training:
+  root_dir: artifacts/federated_training
+  client_models_dir: artifacts/federated_training/client_models
+  aggregated_model_path: artifacts/federated_training/aggregated_model.h5
+
+explainability:
+  root_dir: artifacts/explainability
+  heatmap_dir: artifacts/explainability/heatmaps
+
+prepare_base_model:
+  root_dir: artifacts/prepare_base_model
+  base_model_path: artifacts/prepare_base_model/base_model.h5
+  updated_base_model_path: artifacts/prepare_base_model/base_model_updated.h5
+
+training:
+  root_dir: artifacts/training
+  trained_model_path: artifacts/training/model.h5
